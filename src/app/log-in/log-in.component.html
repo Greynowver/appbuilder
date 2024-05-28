@@ -1,0 +1,23 @@
+<div class="column-layout group">
+  <img src="/assets/LRX_Logos_Dark.svg" class="image" />
+  <h5 class="h5">
+    Welcome Back
+  </h5>
+  <p class="ig-typography__body-2 text">
+    Welcome back! Please enter your details
+  </p>
+  <igx-input-group type="border" class="input">
+    <input type="text" placeholder="Please enter your email" [required]="true" igxInput />
+    <label igxLabel>Email</label>
+  </igx-input-group>
+  <igx-input-group type="border" class="input">
+    <input type="password" placeholder="******" [required]="true" igxInput />
+    <label igxLabel>Password</label>
+  </igx-input-group>
+  <p class="text_1">
+    Forgot password?
+  </p>
+  <button igxButton="contained" igxRipple class="button">
+    Sign in
+  </button>
+</div>

@@ -1,0 +1,70 @@
+<div class="row-layout group">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1024" width="320px" class="nav-drawer">
+    <ng-template igxDrawer>
+      <img src="/assets/LRX_Logos_Dark.svg" class="image" />
+      <div igxDrawerItem igxRipple routerLink="/master-view/view1">
+        <igx-icon class="icon">
+          home
+        </igx-icon>
+        <span>Home</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/view2">
+        <igx-icon class="icon">
+          cases
+        </igx-icon>
+        <span>Organisation</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/view3">
+        <igx-icon class="icon">
+          person_2
+        </igx-icon>
+        <span>Custumer</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/view3">
+        <igx-icon class="icon">
+          savings
+        </igx-icon>
+        <span>Finance</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/view3">
+        <igx-icon class="icon">
+          assured_workload
+        </igx-icon>
+        <span>Compliance</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/view3">
+        <igx-icon class="icon">
+          equalizer
+        </igx-icon>
+        <span>Reports</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/view3">
+        <igx-icon class="icon">
+          manage_accounts
+        </igx-icon>
+        <span>Manage</span>
+      </div>
+      <igx-expansion-panel [collapsed]="false" class="expansion-panel">
+        <igx-expansion-panel-body></igx-expansion-panel-body>
+        <igx-expansion-panel-header iconPosition="none">
+          <igx-expansion-panel-title></igx-expansion-panel-title>
+        </igx-expansion-panel-header>
+      </igx-expansion-panel>
+      <div igxDrawerItem igxRipple routerLink="/master-view/view3">
+        <igx-icon class="icon">
+          live_help
+        </igx-icon>
+        <span>Help</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/view3">
+        <igx-icon class="icon">
+          logout
+        </igx-icon>
+        <span>Logout</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
